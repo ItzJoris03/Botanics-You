@@ -12,20 +12,6 @@ const ComingSoon: React.FC = () => {
                 <h1 className="text-6xl font-bold mb-6">Coming Soon</h1>
                 <p className="text-2xl mb-6">We're crafting something special to share our passion for natural products.</p>
                 <p className="text-lg mb-8">Stay tuned for updates from <span className="font-bold">Botanics&You</span>.</p>
-                <form action="#" method="POST" className="flex items-center justify-center">
-                    <input 
-                        type="email" 
-                        placeholder="Enter your email" 
-                        className="p-4 rounded-l-md text-black focus:outline-none" 
-                        required 
-                    />
-                    <button 
-                        type="submit" 
-                        className="bg-green-600 text-white p-4 rounded-r-md hover:bg-green-700 transition duration-200"
-                    >
-                        Notify Me
-                    </button>
-                </form>
                 <p className="text-md my-8"><span className='text-red-500'>NOTE:</span> <span className='italic'>This is just temporarily to test the web server for</span> <span className="font-bold">Botanics&You</span>.</p>
             </div>
         </div>
