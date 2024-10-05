@@ -120,18 +120,9 @@ jest.setup.js
 # Parcel cache
 .cache/
 
-# Next.js build output (if applicable)
-.next/
-
-# SvelteKit build output (if applicable)
-.svelte-kit/
-
 # Gatsby files (if applicable)
 .cache/
 public/
-
-# Expo files (if applicable)
-.expo/
 
 # Storybook build output
 .out/
