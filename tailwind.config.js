@@ -5,7 +5,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        SourceSans: "'Source Sans 3', sans-serif",
+        PlayfairDisplay: "'Playfair Display', serif",
+      },
+      colors: {
+        white: "#fefbf8",
+        black: "#101115",
+        main: "#94b17b"
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require("@xpd/tailwind-3dtransforms")
+  ],
 }

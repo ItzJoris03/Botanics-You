@@ -1,18 +1,36 @@
 import React from 'react';
+import logo from '/BotanicsYouFull-inverted.svg';
+import logoIcon from '/LogoIcon-inverted.svg';
 
 const ComingSoon: React.FC = () => {
     return (
-        <div className="relative flex items-center justify-center h-screen overflow-hidden">
-            <img 
-                src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc0M3wwfDF8c2VhcmNofDE0fHxuYXR1cmFsJTIwcHJvZHVjdHxlbnwwfHx8fDE2OTAxMDM2MTE&ixlib=rb-1.2.1&q=80&w=1920" 
-                alt="Natural Products Background" 
+        <div className='relative flex justify-center items-center h-screen overflow-hidden py-10'>
+            <img
+                src="https://images.unsplash.com/photo-1543459176-4426b37223ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Natural Products Background"
                 className="absolute inset-0 object-cover w-full h-full"
             />
-            <div className="relative z-10 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 p-8 rounded-lg shadow-lg">
-                <h1 className="text-6xl font-bold mb-6">Coming Soon</h1>
-                <p className="text-2xl mb-6">We're crafting something special to share our passion for natural products.</p>
-                <p className="text-lg mb-8">Stay tuned for updates from <span className="font-bold">Botanics&You</span>.</p>
-                <p className="text-md my-8"><span className='text-red-500'>NOTE:</span> <span className='italic'>This is just temporarily to test the web server for</span> <span className="font-bold">Botanics&You</span>.</p>
+
+            <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 backdrop-blur-sm p-8 rounded-lg shadow-lg">
+                <div className='absolute flex justify-center items-center h-32 top-16 w-full group'>
+                    <img
+                        src={logo}
+                        alt="Botanics&You logo with slogan"
+                        className="absolute h-32 transform duration-1000 transition-all group-hover:animate-TurnInvisible group-hover:opacity-0 group-hover:rotate-y-180"
+                    />
+                    <img
+                        src={logoIcon}
+                        alt="Botanics&You logo with slogan"
+                        className="relative h-32 opacity-0 duration-1000 transform rotate-y-180 group-hover:opacity-100 group-hover:rotate-y-0 transition-all"
+                    />
+                </div>
+
+                <div>
+                    <h1 className="text-6xl font-bold mb-6">Coming Soon</h1>
+                    <p className="text-2xl mb-6 brightness-90">We're crafting something special to share our passion for natural products.</p>
+                </div>
+
+                <p className="absolute bottom-16 brightness-75">Botanics & You @{new Date().getFullYear()}</p>
             </div>
         </div>
     );
