@@ -122,7 +122,6 @@ jest.setup.js
 
 # Gatsby files (if applicable)
 .cache/
-public/
 
 # Storybook build output
 .out/
