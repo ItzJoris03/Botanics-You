@@ -1,4 +1,6 @@
+# ===========================
 # Logs
+# ===========================
 logs
 *.log
 npm-debug.log*
@@ -7,21 +9,151 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ===========================
+# Dependency directories
+# ===========================
+node_modules/
+# If you have a frontend and backend, you might have node_modules in both
+# Uncomment the following lines if applicable
+# client/node_modules/
+# server/node_modules/
 
+# ===========================
+# Build directories
+# ===========================
+# Vite build output
+dist/
+# Additional build directories (if any)
+build/
+.vite/
+
+# ===========================
+# Temporary files
+# ===========================
+*.local
+*.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===========================
+# Environment variables
+# ===========================
+.env
+
+# ===========================
+# Coverage reports
+# ===========================
+coverage/
+*.lcov
+
+# ===========================
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# ===========================
+# VSCode
+.vscode/
+!.vscode/extensions.json  # Keep extensions.json if you have specific extensions to share
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Other editors
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Environment variables
-.env
+# ===========================
+# OS generated files
+# ===========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ===========================
+# Optional npm cache directory
+# ===========================
+.npm/
+
+# ===========================
+# Optional eslint cache
+# ===========================
+.eslintcache
+
+# ===========================
+# TypeScript
+# ===========================
+# Compiled JavaScript files
+*.js
+*.jsx
+*.ts
+*.tsx
+# Source maps
+*.map
+
+# ===========================
+# Testing
+# ===========================
+# Jest
+jest.config.js
+jest.setup.js
+
+# ===========================
+# Miscellaneous
+# ===========================
+# Backup files
+*.bak
+*.tmp
+*.temp
+
+# Parcel cache
+.cache/
+
+# Next.js build output (if applicable)
+.next/
+
+# SvelteKit build output (if applicable)
+.svelte-kit/
+
+# Gatsby files (if applicable)
+.cache/
+public/
+
+# Expo files (if applicable)
+.expo/
+
+# Storybook build output
+.out/
+storybook-static/
+
+# ===========================
+# TailwindCSS specific
+# ===========================
+# Generated CSS files
+*.css
+
+# ===========================
+# Other build tools
+# ===========================
+# Babel
+.babelrc
+.babelrc.js
+.babelrc.json
+
+# ===========================
+# Add any other files or directories you want to ignore below
+# ===========================
+
+# TypeScript build info file
+*.tsbuildinfo
