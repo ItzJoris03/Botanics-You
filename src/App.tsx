@@ -1,9 +1,11 @@
-import ComingSoon from './views/ComingSoon'
+import RouterComponent from '@/components/Router';
+// import ComingSoon from '@/views/ComingSoon';
 
 function App() {
   return (
     <>
-      <ComingSoon />
+      <RouterComponent />
+      {/* <ComingSoon /> */}
     </>
   )
 }

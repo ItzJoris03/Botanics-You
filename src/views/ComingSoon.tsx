@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/BotanicsYouFull-inverted.svg';
+import logo from '@/assets/svg/logo/BotanicsYouFull-inverted.svg';
 import logoIcon from '/LogoIcon-inverted.svg';
 
 const ComingSoon: React.FC = () => {

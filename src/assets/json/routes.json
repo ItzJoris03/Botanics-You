@@ -1,0 +1,32 @@
+{
+    "routes": [
+        {
+            "path": "/",
+            "component": "Home",
+            "title": "Home Page",
+            "linkName": "Home",
+            "visibleInMenu": true,
+            "includeNavbar": true
+        },
+        {
+            "path": "/about",
+            "component": "About",
+            "title": "About Us",
+            "linkName": "About Us",
+            "visibleInMenu": true
+        },
+        {
+            "path": "/contact",
+            "component": "Contact",
+            "title": "Contact Us",
+            "linkName": "Contact",
+            "visibleInMenu": true
+        },
+        {
+            "path": "/comingsoon",
+            "component": "ComingSoon",
+            "linkName": "Coming Soon",
+            "visibleInMenu": false
+        }
+    ]
+}
