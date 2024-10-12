@@ -5,7 +5,6 @@
             "component": "Home",
             "title": "Home Page",
             "linkName": "Home",
-            "visibleInMenu": true,
             "includeNavbar": true
         },
         {
@@ -13,20 +12,58 @@
             "component": "About",
             "title": "About Us",
             "linkName": "About Us",
-            "visibleInMenu": true
+            "subroutes": [
+                {
+                    "path": "team",
+                    "component": "Team",
+                    "linkName": "Team"
+                },
+                {
+                    "path": "company",
+                    "component": "Company",
+                    "linkName": "Company"
+                },
+                {
+                    "path": "test",
+                    "component": "Company",
+                    "linkName": "Test Link"
+                }
+            ]
         },
         {
             "path": "/contact",
             "component": "Contact",
             "title": "Contact Us",
-            "linkName": "Contact",
-            "visibleInMenu": true
+            "linkName": "Contact"
+        },
+        {
+            "path": "/maintest",
+            "component": "About",
+            "title": "About Us",
+            "linkName": "Main Test",
+            "subroutes": [
+                {
+                    "path": "test",
+                    "component": "Team",
+                    "linkName": "Test"
+                },
+                {
+                    "path": "test1",
+                    "component": "Company",
+                    "linkName": "Test1"
+                },
+                {
+                    "path": "test2",
+                    "component": "Company",
+                    "linkName": "Test2"
+                }
+            ]
         },
         {
             "path": "/comingsoon",
             "component": "ComingSoon",
             "linkName": "Coming Soon",
-            "visibleInMenu": false
+            "hiddenFromMenu": true
         }
     ]
 }
