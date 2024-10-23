@@ -39,7 +39,6 @@ const MobileSubroutesMenu: React.FC<{ route: RouteConfig, onClick: () => void }>
             for (const child of children) {
                 child.classList.toggle('w-0');
                 child.classList.toggle('w-1/3');
-                child.classList.toggle('z-10');
             }
 
             if (container.classList.contains("flex")) { // === mobile menu is visible
@@ -47,9 +46,9 @@ const MobileSubroutesMenu: React.FC<{ route: RouteConfig, onClick: () => void }>
                     link.classList.toggle("scale-0");
                 }
 
-                bg.classList.toggle('z-[-1]');
-
                 setTimeout(() => {
+                    bg.classList.toggle('z-[-1]');
+                    bg.classList.toggle('z-[1]');
                     btn.classList.toggle('z-[-1]');
                     container.classList.toggle('hidden');
                     container.classList.toggle('flex');
@@ -60,6 +59,7 @@ const MobileSubroutesMenu: React.FC<{ route: RouteConfig, onClick: () => void }>
                 container.classList.toggle('flex');
 
                 bg.classList.toggle('z-[-1]');
+                bg.classList.toggle('z-[1]');
 
                 setTimeout(() => {
                     for (const link of container.children) {
